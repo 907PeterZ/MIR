@@ -1,0 +1,181 @@
+2026-03-24 20:53:01,144 - ============================== Params ==============================
+2026-03-24 20:53:01,144 - logger_name: mult_MIntRec_multi-class_2026-03-24-20-53-01
+2026-03-24 20:53:01,144 - dataset: MIntRec
+2026-03-24 20:53:01,144 - data_mode: multi-class
+2026-03-24 20:53:01,144 - method: mult
+2026-03-24 20:53:01,144 - modalities: ['video']
+2026-03-24 20:53:01,144 - text_backbone: cache/local_bert_tokenizer
+2026-03-24 20:53:01,144 - seed: 0
+2026-03-24 20:53:01,144 - num_workers: 0
+2026-03-24 20:53:01,145 - gpu_id: 0
+2026-03-24 20:53:01,145 - data_path: MIA-datasets
+2026-03-24 20:53:01,145 - train: True
+2026-03-24 20:53:01,145 - tune: False
+2026-03-24 20:53:01,145 - save_model: False
+2026-03-24 20:53:01,145 - save_results: True
+2026-03-24 20:53:01,145 - log_path: logs
+2026-03-24 20:53:01,145 - cache_path: cache
+2026-03-24 20:53:01,145 - video_data_path: video_data
+2026-03-24 20:53:01,145 - audio_data_path: audio_data
+2026-03-24 20:53:01,145 - video_feats_path: video_feats.pkl
+2026-03-24 20:53:01,145 - audio_feats_path: audio_feats.pkl
+2026-03-24 20:53:01,145 - results_path: results
+2026-03-24 20:53:01,145 - output_path: outputs
+2026-03-24 20:53:01,145 - model_path: models
+2026-03-24 20:53:01,145 - config_file_name: mult_bert
+2026-03-24 20:53:01,145 - results_file_name: mult_ablation_6.csv
+2026-03-24 20:53:01,145 - padding_mode: zero
+2026-03-24 20:53:01,145 - padding_loc: end
+2026-03-24 20:53:01,145 - need_aligned: False
+2026-03-24 20:53:01,145 - eval_monitor: f1
+2026-03-24 20:53:01,145 - train_batch_size: 16
+2026-03-24 20:53:01,145 - eval_batch_size: 8
+2026-03-24 20:53:01,145 - test_batch_size: 8
+2026-03-24 20:53:01,146 - wait_patience: 8
+2026-03-24 20:53:01,146 - num_train_epochs: 100
+2026-03-24 20:53:01,146 - dst_feature_dims: 120
+2026-03-24 20:53:01,146 - nheads: 8
+2026-03-24 20:53:01,146 - n_levels: 8
+2026-03-24 20:53:01,146 - attn_dropout: 0.0
+2026-03-24 20:53:01,146 - attn_dropout_v: 0.2
+2026-03-24 20:53:01,146 - attn_dropout_a: 0.2
+2026-03-24 20:53:01,146 - relu_dropout: 0.0
+2026-03-24 20:53:01,146 - embed_dropout: 0.1
+2026-03-24 20:53:01,146 - res_dropout: 0.0
+2026-03-24 20:53:01,146 - output_dropout: 0.2
+2026-03-24 20:53:01,146 - text_dropout: 0.4
+2026-03-24 20:53:01,146 - grad_clip: 0.5
+2026-03-24 20:53:01,146 - attn_mask: True
+2026-03-24 20:53:01,146 - conv1d_kernel_size_l: 5
+2026-03-24 20:53:01,146 - conv1d_kernel_size_v: 1
+2026-03-24 20:53:01,146 - conv1d_kernel_size_a: 1
+2026-03-24 20:53:01,146 - lr: 3e-05
+2026-03-24 20:53:01,146 - pred_output_path: outputs/mult_MIntRec_multi-class_2026-03-24-20-53-01
+2026-03-24 20:53:01,146 - model_output_path: outputs/mult_MIntRec_multi-class_2026-03-24-20-53-01/models
+2026-03-24 20:53:01,146 - ============================== End Params ==============================
+2026-03-24 20:53:01,147 - ✅ Final args saved to outputs/mult_MIntRec_multi-class_2026-03-24-20-53-01/models/training_args.json
+2026-03-24 20:53:01,149 - Load Video Features Begin...
+2026-03-24 20:53:01,492 - Load Video Features Finished...
+2026-03-24 20:53:10,508 - Multimodal intent recognition begins...
+2026-03-24 20:53:10,509 - Training begins...
+2026-03-24 20:53:17,916 - ***** Epoch: 1: Eval results *****
+2026-03-24 20:53:17,916 -   best_eval_score = 0.0
+2026-03-24 20:53:17,916 -   eval_score = 0.0216
+2026-03-24 20:53:17,916 -   train_loss = 2.8931
+2026-03-24 20:53:23,577 - ***** Epoch: 2: Eval results *****
+2026-03-24 20:53:23,577 -   best_eval_score = 0.0216
+2026-03-24 20:53:23,578 -   eval_score = 0.0293
+2026-03-24 20:53:23,578 -   train_loss = 2.8107
+2026-03-24 20:53:29,316 - ***** Epoch: 3: Eval results *****
+2026-03-24 20:53:29,316 -   best_eval_score = 0.0293
+2026-03-24 20:53:29,316 -   eval_score = 0.0285
+2026-03-24 20:53:29,316 -   train_loss = 2.7768
+2026-03-24 20:53:29,317 - EarlyStopping counter: 1 out of 8
+2026-03-24 20:53:33,454 - ***** Epoch: 4: Eval results *****
+2026-03-24 20:53:33,455 -   best_eval_score = 0.0293
+2026-03-24 20:53:33,456 -   eval_score = 0.0271
+2026-03-24 20:53:33,456 -   train_loss = 2.73
+2026-03-24 20:53:33,456 - EarlyStopping counter: 2 out of 8
+2026-03-24 20:53:39,464 - ***** Epoch: 5: Eval results *****
+2026-03-24 20:53:39,464 -   best_eval_score = 0.0293
+2026-03-24 20:53:39,464 -   eval_score = 0.0436
+2026-03-24 20:53:39,464 -   train_loss = 2.6769
+2026-03-24 20:53:45,317 - ***** Epoch: 6: Eval results *****
+2026-03-24 20:53:45,317 -   best_eval_score = 0.0436
+2026-03-24 20:53:45,317 -   eval_score = 0.0382
+2026-03-24 20:53:45,317 -   train_loss = 2.622
+2026-03-24 20:53:45,317 - EarlyStopping counter: 1 out of 8
+2026-03-24 20:53:51,272 - ***** Epoch: 7: Eval results *****
+2026-03-24 20:53:51,272 -   best_eval_score = 0.0436
+2026-03-24 20:53:51,272 -   eval_score = 0.0482
+2026-03-24 20:53:51,272 -   train_loss = 2.5692
+2026-03-24 20:53:57,113 - ***** Epoch: 8: Eval results *****
+2026-03-24 20:53:57,113 -   best_eval_score = 0.0482
+2026-03-24 20:53:57,113 -   eval_score = 0.046
+2026-03-24 20:53:57,113 -   train_loss = 2.4934
+2026-03-24 20:53:57,113 - EarlyStopping counter: 1 out of 8
+2026-03-24 20:54:02,796 - ***** Epoch: 9: Eval results *****
+2026-03-24 20:54:02,796 -   best_eval_score = 0.0482
+2026-03-24 20:54:02,796 -   eval_score = 0.0557
+2026-03-24 20:54:02,796 -   train_loss = 2.4211
+2026-03-24 20:54:06,461 - ***** Epoch: 10: Eval results *****
+2026-03-24 20:54:06,461 -   best_eval_score = 0.0557
+2026-03-24 20:54:06,461 -   eval_score = 0.0544
+2026-03-24 20:54:06,462 -   train_loss = 2.3398
+2026-03-24 20:54:06,462 - EarlyStopping counter: 1 out of 8
+2026-03-24 20:54:12,165 - ***** Epoch: 11: Eval results *****
+2026-03-24 20:54:12,165 -   best_eval_score = 0.0557
+2026-03-24 20:54:12,165 -   eval_score = 0.0745
+2026-03-24 20:54:12,165 -   train_loss = 2.253
+2026-03-24 20:54:18,155 - ***** Epoch: 12: Eval results *****
+2026-03-24 20:54:18,155 -   best_eval_score = 0.0745
+2026-03-24 20:54:18,155 -   eval_score = 0.0621
+2026-03-24 20:54:18,155 -   train_loss = 2.1314
+2026-03-24 20:54:18,155 - EarlyStopping counter: 1 out of 8
+2026-03-24 20:54:24,342 - ***** Epoch: 13: Eval results *****
+2026-03-24 20:54:24,342 -   best_eval_score = 0.0745
+2026-03-24 20:54:24,342 -   eval_score = 0.0563
+2026-03-24 20:54:24,342 -   train_loss = 2.0302
+2026-03-24 20:54:24,343 - EarlyStopping counter: 2 out of 8
+2026-03-24 20:54:30,726 - ***** Epoch: 14: Eval results *****
+2026-03-24 20:54:30,726 -   best_eval_score = 0.0745
+2026-03-24 20:54:30,726 -   eval_score = 0.0504
+2026-03-24 20:54:30,726 -   train_loss = 1.8995
+2026-03-24 20:54:30,727 - EarlyStopping counter: 3 out of 8
+2026-03-24 20:54:34,543 - ***** Epoch: 15: Eval results *****
+2026-03-24 20:54:34,543 -   best_eval_score = 0.0745
+2026-03-24 20:54:34,543 -   eval_score = 0.0442
+2026-03-24 20:54:34,543 -   train_loss = 1.6842
+2026-03-24 20:54:34,543 - EarlyStopping counter: 4 out of 8
+2026-03-24 20:54:40,551 - ***** Epoch: 16: Eval results *****
+2026-03-24 20:54:40,551 -   best_eval_score = 0.0745
+2026-03-24 20:54:40,551 -   eval_score = 0.0463
+2026-03-24 20:54:40,551 -   train_loss = 1.639
+2026-03-24 20:54:40,551 - EarlyStopping counter: 5 out of 8
+2026-03-24 20:54:46,710 - ***** Epoch: 17: Eval results *****
+2026-03-24 20:54:46,710 -   best_eval_score = 0.0745
+2026-03-24 20:54:46,710 -   eval_score = 0.0443
+2026-03-24 20:54:46,710 -   train_loss = 1.6079
+2026-03-24 20:54:46,710 - EarlyStopping counter: 6 out of 8
+2026-03-24 20:54:52,821 - ***** Epoch: 18: Eval results *****
+2026-03-24 20:54:52,821 -   best_eval_score = 0.0745
+2026-03-24 20:54:52,822 -   eval_score = 0.0601
+2026-03-24 20:54:52,822 -   train_loss = 1.5772
+2026-03-24 20:54:52,822 - EarlyStopping counter: 7 out of 8
+2026-03-24 20:54:58,745 - ***** Epoch: 19: Eval results *****
+2026-03-24 20:54:58,745 -   best_eval_score = 0.0745
+2026-03-24 20:54:58,745 -   eval_score = 0.0591
+2026-03-24 20:54:58,746 -   train_loss = 1.5602
+2026-03-24 20:54:58,746 - EarlyStopping counter: 8 out of 8
+2026-03-24 20:54:58,746 - EarlyStopping at epoch 19
+2026-03-24 20:54:58,746 - Training is finished...
+2026-03-24 20:54:58,747 - Testing begins...
+2026-03-24 20:54:59,582 - ***** Test: Confusion Matrix *****
+2026-03-24 20:54:59,583 - [[32  6  0  1  3  1  0  0  0  1  0  1  6  2  1  1  1  0  1  0]
+ [17  9  2  2  1  0  0  0  0  0  1  0 11  0  0  0  0  0  0  0]
+ [ 9  1  2  3  0  0  0  0  0  0  0  1 10  0  0  0  0  0  1  0]
+ [ 6  2  0  3  1  2  0  0  0  0  0  1  5  0  1  0  2  1  1  0]
+ [ 8  1  1  1  0  0  0  0  0  0  0  0 10  1  0  0  0  0  1  0]
+ [ 2  1  1  0  0  0  0  0  0  0  0  1  2  2  2  0  0  0  1  0]
+ [ 6  0  0  0  0  0  0  0  0  0  0  0  3  1  1  1  0  0  0  0]
+ [ 2  0  0  1  0  0  0  0  0  0  0  0  6  1  0  0  0  0  0  0]
+ [ 4  0  0  1  0  0  0  0  0  0  0  0  5  0  0  0  0  0  0  0]
+ [ 2  3  0  0  0  0  0  0  0  0  0  0  3  0  0  1  0  0  1  0]
+ [ 5  5  0  3  0  1  0  0  0  0  0  0  1  1  1  1  0  0  0  0]
+ [ 7  1  3  2  0  0  0  0  0  0  0  0  6  0  0  0  0  0  0  0]
+ [13  2  4  3  1  0  0  0  0  0  0  1 26  2  2  1  2  0  0  0]
+ [11  3  1  1  1  0  0  0  0  0  0  0  3  1  3  0  1  0  0  0]
+ [ 5  0  3  1  1  0  0  0  0  0  0  0  7  3  1  0  0  0  1  0]
+ [ 9  0  0  0  0  0  0  0  0  0  0  0  8  1  0  1  2  0  0  0]
+ [12  1  0  0  1  0  0  0  0  0  0  0  2  0  1  0  0  0  0  0]
+ [ 3  1  2  2  1  0  0  0  0  0  0  0  4  0  1  0  0  0  1  0]
+ [ 1  1  1  1  0  0  0  0  0  0  0  0  4  0  0  0  0  0  4  0]
+ [ 1  2  0  1  0  0  0  0  0  0  0  0  5  0  1  0  0  0  0  0]]
+2026-03-24 20:54:59,583 - ***** Evaluation results *****
+2026-03-24 20:54:59,583 -   acc = 0.1775
+2026-03-24 20:54:59,584 -   f1 = 0.0759
+2026-03-24 20:54:59,584 -   prec = 0.0745
+2026-03-24 20:54:59,584 -   rec = 0.0944
+2026-03-24 20:54:59,585 - Testing is finished...
+2026-03-24 20:54:59,585 - Multimodal intent recognition is finished...
+2026-03-24 20:54:59,585 - Results are saved in results/mult_ablation_6.csv

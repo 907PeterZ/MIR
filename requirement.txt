@@ -1,0 +1,42 @@
+# MIntRec inference runtime dependencies (from mintrec env, inference stage)
+# Python 3.8/3.9 is recommended for this stack.
+#
+# NOTE:
+# 1) Install PyTorch + CUDA wheels first if you need GPU.
+# 2) mmcv-full==1.6.0 may require OpenMMLab wheel index, e.g.:
+#    pip install mmcv-full==1.6.0 -f https://download.openmmlab.com/mmcv/dist/cu113/torch1.11/index.html
+
+addict==2.4.0
+audioread==3.1.0
+huggingface-hub==0.36.0
+imageio==2.37.2
+imageio-ffmpeg==0.6.0
+librosa==0.9.1
+llvmlite==0.43.0
+matplotlib==3.3.4
+mmcv-full==1.6.0
+mmdet==2.24.0
+moviepy==1.0.3
+numba==0.60.0
+numpy==1.25.2
+openai-whisper==20250625
+opencv-python==4.8.0.74
+pandas==2.3.3
+Pillow==11.3.0
+protobuf==6.33.6
+pycocotools==2.0.11
+python_speech_features==0.6
+PyYAML==6.0.3
+resampy==0.4.3
+scenedetect==0.6.7.1
+scikit-learn==0.24.2
+scipy==1.11.4
+soundfile==0.13.1
+streamlit==1.50.0
+tiktoken==0.12.0
+tokenizers==0.11.6
+torch==1.11.0
+torchaudio==0.11.0
+torchvision==0.12.0
+tqdm==4.63.1
+transformers==4.17.0
