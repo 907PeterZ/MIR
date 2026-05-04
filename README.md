@@ -1,0 +1,4 @@
+模态消融结果里面保存着各个模态组合基于MulT框架训练后，在测试集上的各项指标及其可视化图表。
+Inference文件夹里面包含了推理代码（特征提取、MulT推理代码等），还有Streamlit做的可视化交互web。
+在运行代码前，先需要下载release里面的模型参数的cache文件夹，将cache文件夹放入Inference文件夹。
+requirement.txt为本项目的环境，运行项目在Inference文件夹下终端输入 streamlit run webui.py .
