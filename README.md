@@ -5,3 +5,5 @@ Inference文件夹里面包含了推理代码（特征提取、MulT推理代码�
 在运行代码前，先需要下载releases里面的模型参数的cache文件夹，将cache文件夹放入Inference文件夹。
 
 requirement.txt为本项目的环境，运行项目在Inference文件夹下终端输入 streamlit run webui.py .
+
+系统优化消融实验说明：v0为未优化版本；v1实现了三模态特征并行提取；v2在v1的基础上实现了中间过程内存话操作；最终优化版即Inference文件夹。
