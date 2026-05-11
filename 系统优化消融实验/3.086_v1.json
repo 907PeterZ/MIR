@@ -1,0 +1,70 @@
+{
+  "video_path": "/home/wbr12589/Project/Inference_Ablation/video/89.mp4",
+  "transcript": "And Georgia is kind of a legend.",
+  "prediction": {
+    "intent": "Praise",
+    "binary": "Emotion",
+    "probs": [
+      0.0001099606161005795,
+      0.9878913164138794,
+      2.4227654648711905e-05,
+      6.50771107757464e-05,
+      0.00019788325880654156,
+      0.0001637151144677773,
+      0.0016684868605807424,
+      0.002814770443364978,
+      0.001520045567303896,
+      3.479876977507956e-05,
+      6.155326991574839e-05,
+      4.204515425954014e-05,
+      0.00010483463120181113,
+      9.595866868039593e-05,
+      5.698189852409996e-05,
+      0.004903329070657492,
+      5.885408609174192e-05,
+      3.600949276005849e-05,
+      0.00012878327106591314,
+      2.135221984644886e-05
+    ]
+  },
+  "execution_order": [
+    "video_load",
+    "parallel_features",
+    "mult_inference"
+  ],
+  "summary": {
+    "video_duration_s": 3.085904920767306,
+    "stage_timing_s": {
+      "video_load": 0.017211940999914077,
+      "visual_detect_speaker_process": 27.892062752999664,
+      "visual_video_preprocess_process": 17.62189480899997,
+      "audio_wav2vec2": 3.86052910699982,
+      "text_whisper": 3.817246602000523,
+      "text_bert_encode": 1.062180231999264,
+      "mult_forward_total": 8.40736947700043
+    },
+    "feature_extraction_s": 45.536013330999594,
+    "mult_inference_s": 8.40736947700043,
+    "total_s": 53.943382808000024
+  },
+  "timing": {
+    "video_load_s": 0.017211940999914077,
+    "video_duration_s": 3.085904920767306,
+    "detect_speaker_process_s": 27.892062752999664,
+    "video_preprocess_process_s": 17.62189480899997,
+    "roi_feature_s": 17.62189480899997,
+    "wav2vec2_s": 3.86052910699982,
+    "whisper_s": 3.817246602000523,
+    "mult_forward_total_s": 8.40736947700043,
+    "bert_encode_s": 1.062180231999264,
+    "mult_s": 0.21620519099997182,
+    "total_s": 53.943382808000024,
+    "video_extract_frames_s": 2.0637441310000213,
+    "person_face_detect_s": 17.56009392100077,
+    "talknet_localize_s": 3.3738840239993806,
+    "visual_branch_s": 40.851046754999516,
+    "audio_branch_s": 3.86052910699982,
+    "text_branch_s": 4.879426833999787,
+    "feature_extraction_total_s": 45.536013330999594
+  }
+}

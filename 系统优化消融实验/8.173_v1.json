@@ -1,0 +1,70 @@
+{
+  "video_path": "/home/wbr12589/Project/Inference_Ablation/video/97.mp4",
+  "transcript": "Yeah, and I said how much hair was always serving up the tea like when he told that lost little girl that she was better off now because her mommy was hat-traff.",
+  "prediction": {
+    "intent": "Complain",
+    "binary": "Emotion",
+    "probs": [
+      0.6483005881309509,
+      0.00029017956694588065,
+      0.0008518219692632556,
+      0.000282193097518757,
+      0.04788172245025635,
+      0.0001373267878079787,
+      0.28605127334594727,
+      0.0015568957896903157,
+      0.007193364668637514,
+      0.000475580949569121,
+      0.000443052442278713,
+      0.0008565160678699613,
+      0.0012612786376848817,
+      0.0010794205591082573,
+      0.0004410766705404967,
+      0.00020564708393067122,
+      0.0017615804681554437,
+      0.0004028959374409169,
+      0.00017901413957588375,
+      0.00034850186784751713
+    ]
+  },
+  "execution_order": [
+    "video_load",
+    "parallel_features",
+    "mult_inference"
+  ],
+  "summary": {
+    "video_duration_s": 8.17347789824854,
+    "stage_timing_s": {
+      "video_load": 0.024879529999452643,
+      "visual_detect_speaker_process": 50.70699020899974,
+      "visual_video_preprocess_process": 22.710860758000308,
+      "audio_wav2vec2": 4.492545025000254,
+      "text_whisper": 4.448799409999992,
+      "text_bert_encode": 1.3387162980006906,
+      "mult_forward_total": 8.918281860999741
+    },
+    "feature_extraction_s": 73.44401544100037,
+    "mult_inference_s": 8.918281860999741,
+    "total_s": 82.36229730200012
+  },
+  "timing": {
+    "video_load_s": 0.024879529999452643,
+    "video_duration_s": 8.17347789824854,
+    "detect_speaker_process_s": 50.70699020899974,
+    "video_preprocess_process_s": 22.710860758000308,
+    "roi_feature_s": 22.710860758000308,
+    "wav2vec2_s": 4.492545025000254,
+    "whisper_s": 4.448799409999992,
+    "mult_forward_total_s": 8.918281860999741,
+    "bert_encode_s": 1.3387162980006906,
+    "mult_s": 0.14965157400001772,
+    "total_s": 82.36229730200012,
+    "video_extract_frames_s": 6.2698713370000405,
+    "person_face_detect_s": 34.83605575599995,
+    "talknet_localize_s": 4.320354982000026,
+    "visual_branch_s": 68.6477391920007,
+    "audio_branch_s": 4.492545025000254,
+    "text_branch_s": 5.787515708000683,
+    "feature_extraction_total_s": 73.44401544100037
+  }
+}

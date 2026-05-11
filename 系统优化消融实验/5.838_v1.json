@@ -1,0 +1,70 @@
+{
+  "video_path": "/home/wbr12589/Project/Inference_Ablation/video/304.mp4",
+  "transcript": "test",
+  "prediction": {
+    "intent": "Introduce",
+    "binary": "Goal",
+    "probs": [
+      8.085775334620848e-05,
+      0.0021833896171301603,
+      0.0003468737122602761,
+      0.001236706622876227,
+      0.0018567616352811456,
+      0.0013790311058983207,
+      0.001071477890945971,
+      0.00799753237515688,
+      0.028543131425976753,
+      0.000518705346621573,
+      6.921890599187464e-05,
+      0.002033287426456809,
+      0.15535984933376312,
+      0.0012146014487370849,
+      0.10436732321977615,
+      0.681508481502533,
+      0.0012904894538223743,
+      0.0007171742036007345,
+      0.006979680620133877,
+      0.0012454307870939374
+    ]
+  },
+  "execution_order": [
+    "video_load",
+    "parallel_features",
+    "mult_inference"
+  ],
+  "summary": {
+    "video_duration_s": 5.838198498748957,
+    "stage_timing_s": {
+      "video_load": 0.02050530099950265,
+      "visual_detect_speaker_process": 51.63574973499999,
+      "visual_video_preprocess_process": 18.681306612999833,
+      "audio_wav2vec2": 1.6351395029996638,
+      "text_whisper": 0.0,
+      "text_bert_encode": 1.3281051750000188,
+      "mult_forward_total": 8.56717599500007
+    },
+    "feature_extraction_s": 70.33868890899976,
+    "mult_inference_s": 8.56717599500007,
+    "total_s": 78.90586490399983
+  },
+  "timing": {
+    "video_load_s": 0.02050530099950265,
+    "video_duration_s": 5.838198498748957,
+    "detect_speaker_process_s": 51.63574973499999,
+    "video_preprocess_process_s": 18.681306612999833,
+    "roi_feature_s": 18.681306612999833,
+    "wav2vec2_s": 1.6351395029996638,
+    "whisper_s": 0.0,
+    "mult_forward_total_s": 8.56717599500007,
+    "bert_encode_s": 1.3281051750000188,
+    "mult_s": 0.1539442320008675,
+    "total_s": 78.90586490399983,
+    "video_extract_frames_s": 4.217889454999749,
+    "person_face_detect_s": 29.086255621999953,
+    "talknet_localize_s": 12.88032151599873,
+    "visual_branch_s": 65.27976292799758,
+    "audio_branch_s": 1.6351395029996638,
+    "text_branch_s": 1.3281051750000188,
+    "feature_extraction_total_s": 70.33868890899976
+  }
+}

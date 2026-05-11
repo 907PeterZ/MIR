@@ -1,0 +1,70 @@
+{
+  "video_path": "/home/wbr12589/Project/Inference_Ablation/video/304.mp4",
+  "transcript": "Hey me, I just got off the phone with Pastor Craig and we've decided what I'm gonna do with Murdoch's money",
+  "prediction": {
+    "intent": "Inform",
+    "binary": "Goal",
+    "probs": [
+      4.6933855628594756e-05,
+      1.7891190509544685e-05,
+      2.876518374250736e-05,
+      1.715157850412652e-05,
+      1.236249318026239e-05,
+      7.914923116913997e-06,
+      2.167772254324518e-05,
+      0.00017164334713015705,
+      2.216292341472581e-05,
+      1.0681840649340302e-05,
+      2.699833203223534e-05,
+      0.00018549710512161255,
+      0.9982104301452637,
+      4.704377715825103e-05,
+      0.000494698528200388,
+      6.48581626592204e-05,
+      0.00034899840829893947,
+      8.808699931250885e-06,
+      2.2287298634182662e-05,
+      0.00023313058773055673
+    ]
+  },
+  "execution_order": [
+    "video_load",
+    "parallel_features",
+    "mult_inference"
+  ],
+  "summary": {
+    "video_duration_s": 5.838198498748957,
+    "stage_timing_s": {
+      "video_load": 0.023418765000315034,
+      "visual_detect_speaker_process": 51.133017465000194,
+      "visual_video_preprocess_process": 16.86092056799953,
+      "audio_wav2vec2": 3.9716472330001125,
+      "text_whisper": 4.287235392000184,
+      "text_bert_encode": 1.3104963789992325,
+      "mult_forward_total": 8.379680928999733
+    },
+    "feature_extraction_s": 68.01859804500054,
+    "mult_inference_s": 8.379680928999733,
+    "total_s": 76.39827897400028
+  },
+  "timing": {
+    "video_load_s": 0.023418765000315034,
+    "video_duration_s": 5.838198498748957,
+    "detect_speaker_process_s": 51.133017465000194,
+    "video_preprocess_process_s": 16.86092056799953,
+    "roi_feature_s": 16.86092056799953,
+    "wav2vec2_s": 3.9716472330001125,
+    "whisper_s": 4.287235392000184,
+    "mult_forward_total_s": 8.379680928999733,
+    "bert_encode_s": 1.3104963789992325,
+    "mult_s": 0.15224983600000996,
+    "total_s": 76.39827897400028,
+    "video_extract_frames_s": 4.245619446999626,
+    "person_face_detect_s": 28.42963323099957,
+    "talknet_localize_s": 13.10916982299932,
+    "visual_branch_s": 63.035505283997736,
+    "audio_branch_s": 3.9716472330001125,
+    "text_branch_s": 5.597731770999417,
+    "feature_extraction_total_s": 68.01859804500054
+  }
+}

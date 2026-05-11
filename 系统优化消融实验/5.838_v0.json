@@ -1,0 +1,73 @@
+{
+  "video_path": "/home/wbr12589/Project/Inference_Ablation/video/304.mp4",
+  "transcript": "test",
+  "prediction": {
+    "intent": "Introduce",
+    "binary": "Goal",
+    "probs": [
+      8.111054194159806e-05,
+      0.002176628913730383,
+      0.0003466772905085236,
+      0.0012328537413850427,
+      0.0018539997981861234,
+      0.0013773756800219417,
+      0.0010798254515975714,
+      0.008001180365681648,
+      0.02859204262495041,
+      0.0005181467276997864,
+      6.92985049681738e-05,
+      0.0020303886849433184,
+      0.15508592128753662,
+      0.0012145709479227662,
+      0.10427845269441605,
+      0.6817984580993652,
+      0.001293319626711309,
+      0.00071854202542454,
+      0.006999942474067211,
+      0.0012513055698946118
+    ]
+  },
+  "execution_order": [
+    "video_load",
+    "detect_speaker_process",
+    "video_preprocess_process",
+    "wav2vec2_audio",
+    "provided_text",
+    "mult_inference"
+  ],
+  "summary": {
+    "video_duration_s": 5.838198498748957,
+    "stage_timing_s": {
+      "video_load": 0.02143366900008914,
+      "visual_detect_speaker_process": 56.33333677100018,
+      "visual_video_preprocess_process": 21.058256147000066,
+      "audio_wav2vec2": 5.747278776999792,
+      "text_whisper": 0.0,
+      "text_bert_encode": 0.010517209000227012,
+      "mult_forward_total": 2.6118295259998376
+    },
+    "feature_extraction_s": 83.16066073599995,
+    "mult_inference_s": 2.6118295259998376,
+    "total_s": 85.77249026199979
+  },
+  "timing": {
+    "video_load_s": 0.02143366900008914,
+    "video_duration_s": 5.838198498748957,
+    "detect_speaker_process_s": 56.33333677100018,
+    "video_preprocess_process_s": 21.058256147000066,
+    "roi_feature_s": 21.058256147000066,
+    "wav2vec2_s": 5.747278776999792,
+    "whisper_s": 0.0,
+    "mult_forward_total_s": 2.6118295259998376,
+    "bert_encode_s": 0.010517209000227012,
+    "mult_s": 0.13084423000009338,
+    "total_s": 85.77249026199979,
+    "video_extract_frames_s": 4.549960294000357,
+    "person_face_detect_s": 34.563172493999446,
+    "talknet_localize_s": 13.411923637000655,
+    "visual_branch_s": 74.0146919860008,
+    "audio_branch_s": 5.747278776999792,
+    "text_branch_s": 0.010517209000227012,
+    "feature_extraction_total_s": 83.16066073599995
+  }
+}
